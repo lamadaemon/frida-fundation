@@ -43,7 +43,7 @@ A recommend file stucture is given below
     - other scripts...
 - ff.config.js (config file)
 
-Alternatively if you need to communications between host and remote
+Alternatively if you need to communicate between host and remote
 
 - remote/
     - init.js (entrypoint)
@@ -62,7 +62,7 @@ pnpm install frida-foundation
 
 Typescript package is not required to use typescript in your project,
 however it is recommended to install.
-You should always invoke 'tsc -noEmit' to check types 
+You should always run `tsc -noEmit` to do type checking 
 becuase ESBuild does not do type checking at all.
 
 ```
@@ -75,7 +75,7 @@ pnpm install typescript -D
 You need to create a config file. Recommended name is 'ff.config.js'.
 Use the following template to get started quickly.
 
-```
+```javascript
 const ff = require('frida-fundation')
 
 const config = ff.defineConfig({
